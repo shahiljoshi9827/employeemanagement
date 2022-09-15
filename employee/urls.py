@@ -9,5 +9,4 @@ urlpatterns = [
 ]
 
 router = routers.DefaultRouter()
-# router.register(r'employee', EmployeeViewSet, basename="employee")
 urlpatterns += router.urls

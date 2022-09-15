@@ -11,29 +11,24 @@ class EmployeeSerializer(serializers.ModelSerializer):
 class AddressSerializer(serializers.ModelSerializer):
     class Meta:
         model = AddressDetails
-        # fields = "__all__"
         fields = ('hno', 'street', 'city', 'state')
 
 
 class QualificationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Qualification
-        # fields = "__all__"
         fields = ('qualificationName', 'percentage', 'fromDate', 'fromDate')
 
 
 class WorkExperienceSerializer(serializers.ModelSerializer):
     class Meta:
         model = WorkExperience
-        # fields = "__all__"
         fields = ('companyName', 'fromDate', 'toDate', 'address')
 
 
 class ProjectsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Projects
-        # fields = "__all__"
-
         fields = ('title', 'description')
 
 
