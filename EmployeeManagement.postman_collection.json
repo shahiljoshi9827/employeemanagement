@@ -1,0 +1,525 @@
+{
+	"info": {
+		"_postman_id": "0dd787a6-e359-42db-802a-e098ef41048e",
+		"name": "EmployeeManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23058333"
+	},
+	"item": [
+		{
+			"name": "GetEmployeeList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employee",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetEmployeeList",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 14:35:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2022"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"messsage\": \"employee details found\",\n    \"success\": true,\n    \"employees\": [\n        {\n            \"id\": 1,\n            \"name\": \"Shahil\",\n            \"email\": \"shahiljoshi982@gmail.com\",\n            \"age\": 24,\n            \"gender\": \"Male\",\n            \"phoneNo\": \"1234567898\",\n            \"photo\": \"/photos/3020_1.jpg\",\n            \"addressdetail\": {\n                \"hno\": \"84\",\n                \"street\": \"Naranpura\",\n                \"city\": \"Ahmedabad\",\n                \"state\": \"Gujarat\"\n            },\n            \"qualification\": [\n                {\n                    \"qualificationName\": \"BscIT\",\n                    \"percentage\": 72,\n                    \"fromDate\": \"2022-02-17\"\n                }\n            ],\n            \"workexperience\": [\n                {\n                    \"companyName\": \"Inexture\",\n                    \"fromDate\": \"2022-09-01\",\n                    \"toDate\": \"2022-09-09\",\n                    \"address\": \"Ahmedabad\"\n                }\n            ],\n            \"projects\": [\n                {\n                    \"title\": \"ChatBuddy\",\n                    \"description\": \"Chat Workflow Creator\"\n                }\n            ]\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Shahil\",\n            \"email\": \"shahiljoshi98@gmail.com\",\n            \"age\": 24,\n            \"gender\": \"Male\",\n            \"phoneNo\": \"1234567898\",\n            \"photo\": null,\n            \"addressdetail\": {\n                \"hno\": \"84\",\n                \"street\": \"Naranpura\",\n                \"city\": \"Ahmedabad\",\n                \"state\": \"Gujarat\"\n            },\n            \"qualification\": [\n                {\n                    \"qualificationName\": \"BscIT\",\n                    \"percentage\": 72,\n                    \"fromDate\": \"2022-02-17\"\n                }\n            ],\n            \"workexperience\": [\n                {\n                    \"companyName\": \"Inexture\",\n                    \"fromDate\": \"2022-09-01\",\n                    \"toDate\": \"2022-09-09\",\n                    \"address\": \"Ahmedabad\"\n                }\n            ],\n            \"projects\": [\n                {\n                    \"title\": \"ChatBuddy\",\n                    \"description\": \"Chat Workflow Creator\"\n                }\n            ]\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Shahil\",\n            \"email\": \"shahiljoshi980@gmail.com\",\n            \"age\": 24,\n            \"gender\": \"Male\",\n            \"phoneNo\": \"1234567898\",\n            \"photo\": null,\n            \"addressdetail\": {\n                \"hno\": \"84\",\n                \"street\": \"Naranpura\",\n                \"city\": \"Ahmedabad\",\n                \"state\": \"Gujarat\"\n            },\n            \"qualification\": [\n                {\n                    \"qualificationName\": \"BscIT\",\n                    \"percentage\": 72,\n                    \"fromDate\": \"2022-02-17\"\n                }\n            ],\n            \"workexperience\": [\n                {\n                    \"companyName\": \"Inexture\",\n                    \"fromDate\": \"2022-09-01\",\n                    \"toDate\": \"2022-09-09\",\n                    \"address\": \"Ahmedabad\"\n                }\n            ],\n            \"projects\": [\n                {\n                    \"title\": \"ChatBuddy\",\n                    \"description\": \"Chat Workflow Creator\"\n                }\n            ]\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Shahil\",\n            \"email\": \"shahiljoshi9800@gmail.com\",\n            \"age\": 24,\n            \"gender\": \"Male\",\n            \"phoneNo\": \"1234567898\",\n            \"photo\": null,\n            \"addressdetail\": {\n                \"hno\": \"84\",\n                \"street\": \"Naranpura\",\n                \"city\": \"Ahmedabad\",\n                \"state\": \"Gujarat\"\n            },\n            \"qualification\": [\n                {\n                    \"qualificationName\": \"BscIT\",\n                    \"percentage\": 72,\n                    \"fromDate\": \"2022-02-17\"\n                }\n            ],\n            \"workexperience\": [\n                {\n                    \"companyName\": \"Inexture\",\n                    \"fromDate\": \"2022-09-01\",\n                    \"toDate\": \"2022-09-09\",\n                    \"address\": \"Ahmedabad\"\n                }\n            ],\n            \"projects\": [\n                {\n                    \"title\": \"ChatBuddy\",\n                    \"description\": \"Chat Workflow Creator\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetEmployee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employee/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"1",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetEmployee",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 14:37:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "565"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"messsage\": \"employee details found\",\n    \"success\": true,\n    \"employees\": {\n        \"id\": 1,\n        \"name\": \"Shahil\",\n        \"email\": \"shahiljoshi982@gmail.com\",\n        \"age\": 24,\n        \"gender\": \"Male\",\n        \"phoneNo\": \"1234567898\",\n        \"photo\": \"/photos/3020_1.jpg\",\n        \"addressdetail\": {\n            \"hno\": \"84\",\n            \"street\": \"Naranpura\",\n            \"city\": \"Ahmedabad\",\n            \"state\": \"Gujarat\"\n        },\n        \"qualification\": [\n            {\n                \"qualificationName\": \"BscIT\",\n                \"percentage\": 72,\n                \"fromDate\": \"2022-02-17\"\n            }\n        ],\n        \"workexperience\": [\n            {\n                \"companyName\": \"Inexture\",\n                \"fromDate\": \"2022-09-01\",\n                \"toDate\": \"2022-09-09\",\n                \"address\": \"Ahmedabad\"\n            }\n        ],\n        \"projects\": [\n            {\n                \"title\": \"ChatBuddy\",\n                \"description\": \"Chat Workflow Creator\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Poojan\",\n    \"email\": \"poojanshah21@gmail.com\",\n    \"age\": 24,\n    \"gender\": \"Male\",\n    \"phoneNo\": \"1234567898\",\n    \"addressdetail\": {\n        \"hno\": \"84\",\n        \"street\": \"Naranpura\",\n        \"city\": \"Ahmedabad\",\n        \"state\": \"Gujarat\"\n    },\n    \"qualification\": [\n        {\n            \"qualificationName\": \"BscIT\",\n            \"percentage\": 72.0,\n            \"toDate\": \"2016-04-06\",\n            \"fromDate\": \"2022-02-17\"\n        }\n    ],\n    \"workexperience\": [\n        {\n            \"companyName\": \"Inexture\",\n            \"fromDate\": \"2022-09-01\",\n            \"toDate\": \"2022-09-09\",\n            \"address\": \"Ahmedabad\"\n        }\n    ],\n    \"projects\": [\n        {\n            \"title\": \"ChatBuddy\",\n            \"description\": \"Chat Workflow Creator\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employee/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Employee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Poojan\",\n    \"email\": \"poojanshah21@gmail.com\",\n    \"age\": 24,\n    \"gender\": \"Male\",\n    \"phoneNo\": \"1234567898\",\n    \"addressdetail\": {\n        \"hno\": \"84\",\n        \"street\": \"Naranpura\",\n        \"city\": \"Ahmedabad\",\n        \"state\": \"Gujarat\"\n    },\n    \"qualification\": [\n        {\n            \"qualificationName\": \"BscIT\",\n            \"percentage\": 72.0,\n            \"toDate\": \"2016-04-06\",\n            \"fromDate\": \"2022-02-17\"\n        }\n    ],\n    \"workexperience\": [\n        {\n            \"companyName\": \"Inexture\",\n            \"fromDate\": \"2022-09-01\",\n            \"toDate\": \"2022-09-09\",\n            \"address\": \"Ahmedabad\"\n        }\n    ],\n    \"projects\": [\n        {\n            \"title\": \"ChatBuddy\",\n            \"description\": \"Chat Workflow Creator\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 15:05:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"employee created successfully\",\n    \"regid\": \"EMP8\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Poojan\",\n    \"email\": \"poojanshah21@gmail.com\",\n    \"age\": 24,\n    \"gender\": \"Male\",\n    \"phoneNo\": \"1234567897\",\n    \"addressdetail\": {\n        \"hno\": \"84\",\n        \"street\": \"Naranpura\",\n        \"city\": \"Ahmedabad\",\n        \"state\": \"Gujarat\"\n    },\n    \"qualification\": [\n        {\n            \"qualificationName\": \"BscIT\",\n            \"percentage\": 72.0,\n            \"fromDate\": \"2022-02-17\",\n            \"toDate\": \"2022-09-09\"\n        }\n    ],\n    \"workexperience\": [\n        {\n            \"companyName\": \"Inexture\",\n            \"fromDate\": \"2022-09-01\",\n            \"toDate\": \"2022-09-09\",\n            \"address\": \"Ahmedabad\"\n        }\n    ],\n    \"projects\": [\n        {\n            \"title\": \"ChatBuddy\",\n            \"description\": \"Chat Workflow Creator\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employee/8/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"8",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Employee",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Poojan\",\n    \"email\": \"poojanshah21@gmail.com\",\n    \"age\": 24,\n    \"gender\": \"Male\",\n    \"phoneNo\": \"1234567897\",\n    \"addressdetail\": {\n        \"hno\": \"84\",\n        \"street\": \"Naranpura\",\n        \"city\": \"Ahmedabad\",\n        \"state\": \"Gujarat\"\n    },\n    \"qualification\": [\n        {\n            \"qualificationName\": \"BscIT\",\n            \"percentage\": 72.0,\n            \"fromDate\": \"2022-02-17\",\n            \"toDate\": \"2022-09-09\"\n        }\n    ],\n    \"workexperience\": [\n        {\n            \"companyName\": \"Inexture\",\n            \"fromDate\": \"2022-09-01\",\n            \"toDate\": \"2022-09-09\",\n            \"address\": \"Ahmedabad\"\n        }\n    ],\n    \"projects\": [\n        {\n            \"title\": \"ChatBuddy\",\n            \"description\": \"Chat Workflow Creator\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee/8/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee",
+								"8",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 15:13:00 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "66"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"employee details updated successfully\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employee/8/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"8",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Employee",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee/8/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee",
+								"8",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 15:13:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"employee deleted successfully\",\n    \"success\": true\n}"
+				}
+			]
+		}
+	]
+}
