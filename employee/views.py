@@ -12,7 +12,27 @@ class EmployeeList(APIView):
     """
 
     def get(self, request, format=None):
-        print(request.query_params)
+        if request.query_params.get("regid"):
+            regid = request.query_params.get("regid")
+
+            try:
+                employee = Employee.objects.get(id=regid.split("EMP")[1])
+                serializer = AllDetailSerializer(employee)
+                data = {
+                    "messsage": "employee details found",
+                    "success": True,
+                    "employees": serializer.data
+
+                }
+                return Response(data=data, status=status.HTTP_200_OK)
+
+            except (ObjectDoesNotExist, AttributeError):
+                error = {
+                    "message": f"no employee found with this {regid}",
+                    "success": False
+                }
+                return Response(data=error, status=status.HTTP_200_OK)
+
         try:
             employees = Employee.objects.all()
             serializer = AllDetailSerializer(employees, many=True)
